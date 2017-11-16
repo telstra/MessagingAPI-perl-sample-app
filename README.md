@@ -5,6 +5,15 @@ The Telstra SMS Messaging API allows your applications to send and receive SMS t
 
 It also allows your application to track the delivery status of both sent and received SMS messages.
 
+## Installation 
+
+Requires the following 
+
+- perl
+- libwww-perl 
+- json
+- https
+
 ## Configuration
 
 Edit functions.pm and fill out:
@@ -14,3 +23,5 @@ my $consumer_secret = "";
 ```
 
 See the documentation at [Dev.Telstra.com](https://dev.telstra.com/content/messaging-api) for more information
+
+
