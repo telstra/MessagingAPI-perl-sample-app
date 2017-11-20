@@ -37,7 +37,7 @@ sub get_token(\%) {
 		$hash->{token_expires} = $response->{expires_in} + time() - 60;
 
 		## Write the file to disk.
-		store $hash, dirname($0) . "/tokenstore.bin";
+		store $hash, dirname($0) . "/tokenstore.bin" or warn "Unable to write token store to disk. Proceeding anyway. $!";
 	}
 
 	return;
